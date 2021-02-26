@@ -15,14 +15,17 @@ struct ContentView: View {
         UITableView.appearance().backgroundColor = UIColor.black
         UITableViewCell.appearance().backgroundColor = UIColor.black
         
-//        stockListVM.load()
+        stockListVM.load()
     }
     
-    @State private var searchText: String = ""
+    @ObservedObject private var stockListVM = StocksListViewModel()
+    
     
     var body: some View {
         
-        NavigationView {
+        let filteredStocks = self.stockListVM.searchTerm.isEmpty ? self.stockListVM.stocks : self.stockListVM.stocks.filter { $0.symbol.starts(with: self.stockListVM.searchTerm ) }
+        
+       return NavigationView {
             ZStack(alignment: .leading) {
                 Color.black
                 
@@ -33,8 +36,10 @@ struct ContentView: View {
                     .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
                     .offset(y: -400)
                 
-                SearchView(searchTerm: $searchText)
+                SearchView(searchTerm: $stockListVM.searchTerm)
                     .offset(y: -350)
+                StockListView(stocks: filteredStocks)
+                    .offset(y: 150)
             }
             
             .navigationBarTitle("Stocks")

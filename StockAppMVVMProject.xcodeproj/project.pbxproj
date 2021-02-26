@@ -17,6 +17,7 @@
 		24726A1A25E81C9F00070687 /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24726A1925E81C9F00070687 /* StockViewModel.swift */; };
 		24C5ADB625E8FDE6009F7FAE /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5ADB525E8FDE6009F7FAE /* SearchView.swift */; };
 		24C5ADB925E90372009F7FAE /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5ADB825E90372009F7FAE /* StockListView.swift */; };
+		24C5ADBC25E9114C009F7FAE /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5ADBB25E9114C009F7FAE /* Article.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		24726A1925E81C9F00070687 /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
 		24C5ADB525E8FDE6009F7FAE /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		24C5ADB825E90372009F7FAE /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
+		24C5ADBB25E9114C009F7FAE /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				24726A1125E8166000070687 /* Stock.swift */,
+				24C5ADBB25E9114C009F7FAE /* Article.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			files = (
 				24726A1625E81C3100070687 /* StocksListViewModel.swift in Sources */,
 				24C5ADB925E90372009F7FAE /* StockListView.swift in Sources */,
+				24C5ADBC25E9114C009F7FAE /* Article.swift in Sources */,
 				24726A0E25E8158700070687 /* WebService.swift in Sources */,
 				247269FB25E7AD9400070687 /* ContentView.swift in Sources */,
 				24C5ADB625E8FDE6009F7FAE /* SearchView.swift in Sources */,

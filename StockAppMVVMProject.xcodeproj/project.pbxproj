@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,9 @@
 		24C5ADB625E8FDE6009F7FAE /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5ADB525E8FDE6009F7FAE /* SearchView.swift */; };
 		24C5ADB925E90372009F7FAE /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5ADB825E90372009F7FAE /* StockListView.swift */; };
 		24C5ADBC25E9114C009F7FAE /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5ADBB25E9114C009F7FAE /* Article.swift */; };
+		24C5ADBF25E91351009F7FAE /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5ADBE25E91351009F7FAE /* ArticleViewModel.swift */; };
+		24C5ADC325E936B5009F7FAE /* NewsArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5ADC225E936B5009F7FAE /* NewsArticleView.swift */; };
+		24C5ADC725EA5BEC009F7FAE /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 24C5ADC625EA5BEC009F7FAE /* URLImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,8 @@
 		24C5ADB525E8FDE6009F7FAE /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		24C5ADB825E90372009F7FAE /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
 		24C5ADBB25E9114C009F7FAE /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		24C5ADBE25E91351009F7FAE /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		24C5ADC225E936B5009F7FAE /* NewsArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C5ADC725EA5BEC009F7FAE /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +115,7 @@
 			children = (
 				24726A1525E81C3100070687 /* StocksListViewModel.swift */,
 				24726A1925E81C9F00070687 /* StockViewModel.swift */,
+				24C5ADBE25E91351009F7FAE /* ArticleViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 			children = (
 				24C5ADB525E8FDE6009F7FAE /* SearchView.swift */,
 				24C5ADB825E90372009F7FAE /* StockListView.swift */,
+				24C5ADC225E936B5009F7FAE /* NewsArticleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -138,6 +146,9 @@
 			dependencies = (
 			);
 			name = StockAppMVVMProject;
+			packageProductDependencies = (
+				24C5ADC625EA5BEC009F7FAE /* URLImage */,
+			);
 			productName = StockAppMVVMProject;
 			productReference = 247269F525E7AD9400070687 /* StockAppMVVMProject.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +176,9 @@
 				Base,
 			);
 			mainGroup = 247269EC25E7AD9400070687;
+			packageReferences = (
+				24C5ADC525EA5BEC009F7FAE /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 247269F625E7AD9400070687 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -194,9 +208,11 @@
 				24726A1625E81C3100070687 /* StocksListViewModel.swift in Sources */,
 				24C5ADB925E90372009F7FAE /* StockListView.swift in Sources */,
 				24C5ADBC25E9114C009F7FAE /* Article.swift in Sources */,
+				24C5ADBF25E91351009F7FAE /* ArticleViewModel.swift in Sources */,
 				24726A0E25E8158700070687 /* WebService.swift in Sources */,
 				247269FB25E7AD9400070687 /* ContentView.swift in Sources */,
 				24C5ADB625E8FDE6009F7FAE /* SearchView.swift in Sources */,
+				24C5ADC325E936B5009F7FAE /* NewsArticleView.swift in Sources */,
 				24726A1A25E81C9F00070687 /* StockViewModel.swift in Sources */,
 				24726A1225E8166000070687 /* Stock.swift in Sources */,
 				247269F925E7AD9400070687 /* StockAppMVVMProjectApp.swift in Sources */,
@@ -388,6 +404,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		24C5ADC525EA5BEC009F7FAE /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		24C5ADC625EA5BEC009F7FAE /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24C5ADC525EA5BEC009F7FAE /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 247269ED25E7AD9400070687 /* Project object */;
 }
